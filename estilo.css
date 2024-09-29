@@ -33,26 +33,53 @@ h1 {
     margin: auto;
 }
 
-/* Insira o código abaixo */
-
+/* Alinhar as box junto à borda inicial */
 .container1 {
-    
+    display: flex;
+    justify-content: flex-start;
 }
 
+/* Alinhar as box junto à borda final */
 .container2 {
-    
+    display: flex;
+    justify-content: flex-end;
 }
 
+/* Centralizar as box na linha */
 .container3 {
-   
+    display: flex;
+    justify-content: center;
 }
 
+/* Distribuir as box igualmente ao longo da linha */
 .container4 {
-    
+    display: flex;
+    justify-content: space-between;
 }
+
+/* Distribuir as box com espaçamento ao redor */
 .container5 {
-    
+    display: flex;
+    justify-content: space-around;
 }
-.container-6 {
-    
+
+/* Espaçamento igual entre todos as box */
+.container6 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Exercicio B */
+.container-exercicioB {
+    display: flex;
+    flex-direction: column-reverse; /* Organiza os itens de cima para baixo (4, 3, 2, 1) */
+    justify-content: flex-start; /* Mantém o alinhamento no topo */
+    align-items: flex-start; /* Alinha os itens à esquerda (borda esquerda da tela) */
+}
+
+/* Desafio */
+.container-desafio {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens ao lado esquerdo */
+    flex-direction: row-reverse;
 }
